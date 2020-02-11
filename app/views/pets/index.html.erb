@@ -1,16 +1,15 @@
-<h1>Pets#index</h1>
-
 <div class="container">
+<h1 class="text-center">Pets Lost !!</h1>
+<%= link_to 'Add a pet!', new_pet_path, class:"btn btn-primary" %>
+
   <% @pets.each do |pet| %>
 
     <h2> <%= link_to pet.name, pet_path(pet) %> </h2>
     <p><%= pet.address %></p>
     <p><%= pet.species %></p>
-
-
+    <%= link_to "Modifier", edit_pet_path(pet), class:"btn btn-primary" %>
+    <%= link_to "Supp", pet_path(pet), method: :delete, class:"btn btn-danger" %>
   <% end  %>
-
-  <%= link_to 'Add a pet!', new_pet_path %>
 
 </div>
 
