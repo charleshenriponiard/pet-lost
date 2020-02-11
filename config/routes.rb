@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # get 'pets', to: 'pets#index'
   # get 'pets/new', to: 'pets#new'
@@ -7,7 +8,6 @@ Rails.application.routes.draw do
   # patch 'pets/:id', to: 'pets#update'
   # get 'pets/:id', to: 'pets#show'
   # delete 'pets/:id', to: 'pets#destroy'
-
 
   resources :pets
 end
